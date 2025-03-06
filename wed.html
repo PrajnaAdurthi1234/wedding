@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30th Marriage Anniversary Celebration</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="wed.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">30th Anniversary</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#video">Video</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="container">
+            <h1 class="animated-text">Celebrating 30 Years of Love & Togetherness</h1>
+            <p class="animated-text">Join us in celebrating this special milestone!</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="animated-text">About Our Journey</h2>
+            <p class="animated-text">Thirty years ago, we embarked on a beautiful journey together. Through thick and thin, our love has only grown stronger. This celebration is a testament to our enduring bond and the countless memories we've created together.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="animated-text">Our Memories</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="image.jpg/memories.jpeg" class="card-img-top" alt="Memory 1">
+                        <div class="card-body">
+                            <p class="card-text">Our Wedding Day</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="image.jpg/memories 2.jpg" class="card-img-top" alt="Memory 2">
+                        <div class="card-body">
+                            <p class="card-text">Family Vacations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="image.jpg/memories 3.jpeg" class="card-img-top" alt="Memory 3">
+                        <div class="card-body">
+                            <p class="card-text">Anniversary Celebrations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Video Section -->
+<section id="video" class="video-section">
+    <div class="container">
+        <h2 class="animated-text">Our Story</h2>
+        <div class="video-container">
+            <div class="video-overlay" id="videoOverlay">
+                <img src="image.jpg/viedo image.jpeg" alt="Video Poster" class="video-poster">
+                <button class="play-button" id="playButton">&#9658;</button>
+            </div>
+            <video width="100%" height="auto" controls id="displayVideo">
+                <source src="video/InShot_20250306_135233586.mp4" type="video/mp4">
+                <source src="video/InShot_20250306_135233586.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Optional: Download button for the video -->
+            <a href="video/InShot_20250306_135233586.mp4" download class="download-button">Download Video</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="animated-text">Contact Us</h3>
+                    <p class="animated-text">Ph: 9392358064</p>
+                    <p class="animated-text">Ph: 9490873712</p>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="animated-text">Venue</h3>
+                    <p class="animated-text">1-182 plotno56 Sai DharaniBhommata layout gottipalli.</p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <div class="text-center">
+                        <h3 class="animated-text">We Await Your Presence By</h3>
+                        <p class="animated-text">Sai Trinadh & Prajna Rupini</p>
+                    </div>
+            </div>
+            <p class="text-center animated-text">&copy; Adurthi Sai Prajna Rupini & Adurthi Sai Trinadh  All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS for Video Play -->
+    <script>
+        const videoOverlay = document.getElementById('videoOverlay');
+        const playButton = document.getElementById('playButton');
+        const videoElement = document.getElementById('displayVideo');
+
+        playButton.addEventListener('click', () => {
+            videoOverlay.style.display = 'none';
+            videoElement.style.display = 'block';
+            videoElement.play();
+        });
+    </script>
+</body>
+</html>
